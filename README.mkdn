@@ -1,0 +1,25 @@
+micro_dispatcher.js
+===================
+
+WHAT'S THIS?
+------------
+
+This is yet another tiny javascript library for dispatching.
+
+DISPATCHER
+----------
+
+    var dispatcher = new MicroDispatcher();
+    dispatcher.register('/my/', function () {
+        // your code here
+    });
+    dispatcher.register('/user/:id', function (id) {
+        // your code here
+    });
+    dispatcher.dispatch(location.pathname);
+
+REQUIREMENTS
+------------
+
+There is no dependencies.
+
