@@ -12,7 +12,7 @@
  * dispatcher.register(/^\/user\/([0-9]+)$/, function (user_id) {
  *   alert(user_id);
  * })
- * dispatcher.dispatch(location.path);
+ * dispatcher.dispatch(location.pathname);
  */
 (function() {
     var namedParam    = /:([\w\d]+)/g;
