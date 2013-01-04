@@ -2,7 +2,7 @@
 (function() {
     var namedParam    = /:([\w\d]+)/g;
     var splatParam    = /\*([\w\d]+)/g;
-    var escapeRegExp  = /[-[\]{}()+?.,\\^$|#\s]/g;
+    var escapeRegExp  = /[\-\[\]{}()+?.,\\\^$|#\s]/g;
 
     // http://perfectionkills.com/instanceof-considered-harmful-or-how-to-write-a-robust-isarray/
     var toString = Object.prototype.toString;
