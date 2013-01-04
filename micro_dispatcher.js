@@ -1,19 +1,4 @@
-/**
- * micro_dispatcher.js - (C) tokuhirom, MIT License.
- *
- * var dispatcher = new MicroDispatcher()
- * dispatcher.register('/', function () { })
- * dispatcher.register('/member/:name', function (name) {
- *   alert(name);
- * })
- * dispatcher.register('/download/*path', function (path) {
- *   alert(path);
- * })
- * dispatcher.register(/^\/user\/([0-9]+)$/, function (user_id) {
- *   alert(user_id);
- * })
- * dispatcher.dispatch(location.pathname);
- */
+// micro_dispatcher.js - (C) tokuhirom, MIT License.
 (function() {
     var namedParam    = /:([\w\d]+)/g;
     var splatParam    = /\*([\w\d]+)/g;
